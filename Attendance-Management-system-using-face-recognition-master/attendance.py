@@ -169,7 +169,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("times new roman", 12),
+        font=("Helvetica ", 12),
     )
     lbl1.place(x=120, y=130)
     txt1 = tk.Entry(
@@ -195,7 +195,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("times new roman", 12),
+        font=("Helvetica", 12),
     )
     lbl2.place(x=120, y=200)
     txt2 = tk.Entry(
@@ -205,7 +205,7 @@ def TakeImageUI():
         bg="black",
         fg="yellow",
         relief=RIDGE,
-        font=("times", 25, "bold"),
+        font=("Helvetica", 25, "bold"),
     )
     txt2.place(x=250, y=200)
 
@@ -218,7 +218,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("times new roman", 12),
+        font=("Helvetica", 12),
     )
     lbl3.place(x=120, y=270)
 
@@ -257,7 +257,7 @@ def TakeImageUI():
         text="Take Image",
         command=take_image,
         bd=10,
-        font=("times new roman", 18),
+        font=("Helvetica", 18),
         bg="black",
         fg="yellow",
         height=2,
@@ -281,7 +281,7 @@ def TakeImageUI():
         text="Train Image",
         command=train_image,
         bd=10,
-        font=("times new roman", 18),
+        font=("Helvetica", 18),
         bg="black",
         fg="yellow",
         height=2,
@@ -296,7 +296,7 @@ r = tk.Button(
     text="Register a new student",
     command=TakeImageUI,
     bd=10,
-    font=("times new roman", 16),
+    font=("Helvetica", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -314,7 +314,7 @@ r = tk.Button(
     text="Take Attendance",
     command=automatic_attedance,
     bd=10,
-    font=("times new roman", 16),
+    font=("Helvetica", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -332,7 +332,7 @@ r = tk.Button(
     text="View Attendance",
     command=view_attendance,
     bd=10,
-    font=("times new roman", 16),
+    font=("Helvetica", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -344,7 +344,7 @@ r = tk.Button(
     text="EXIT",
     bd=10,
     command=quit,
-    font=("times new roman", 16),
+    font=("Helvetica", 16),
     bg="black",
     fg="yellow",
     height=2,
