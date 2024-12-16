@@ -138,13 +138,13 @@ def TakeImageUI():
     ImageUI = Tk()
     ImageUI.title("Take Student Image..")
     ImageUI.geometry("780x480")
-    ImageUI.configure(background="black")
+    ImageUI.configure(background="#1c1c1c")  # Dark background for the image window
     ImageUI.resizable(0, 0)
-    titl = tk.Label(ImageUI, bg="black", relief=RIDGE, bd=10, font=("arial", 35))
+    titl = tk.Label(ImageUI, bg="#1c1c1c", relief=RIDGE, bd=10, font=("Helvetica", 30, "bold"))
     titl.pack(fill=X)
     # image and title
     titl = tk.Label(
-        ImageUI, text="Register Your Face", bg="black", fg="green", font=("arial", 30),
+        ImageUI, text="Register Your Face", bg="#1c1c1c", fg="green", font=("Helvetica", 30, "bold"),
     )
     titl.place(x=270, y=12)
 
@@ -152,10 +152,10 @@ def TakeImageUI():
     a = tk.Label(
         ImageUI,
         text="Enter the details",
-        bg="black",
-        fg="yellow",
+        bg="#1c1c1c",  # Dark background for the details label
+        fg="yellow",  # Bright yellow text color
         bd=10,
-        font=("arial", 24),
+        font=("Helvetica", 24, "bold"),
     )
     a.place(x=280, y=75)
 
@@ -177,10 +177,10 @@ def TakeImageUI():
         width=17,
         bd=5,
         validate="key",
-        bg="black",
-        fg="yellow",
+        bg="#333333",  # Dark input background
+        fg="yellow",  # Bright text color for input
         relief=RIDGE,
-        font=("times", 25, "bold"),
+        font=("Helvetica", 18, "bold"),
     )
     txt1.place(x=250, y=130)
     txt1["validatecommand"] = (txt1.register(testVal), "%P", "%d")
