@@ -33,7 +33,7 @@ haarcasecade_path = "haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
     "/TrainingImageLabel/Trainner.yml"
 )
-trainimage_path = "TrainingImage"
+trainimage_path = "/TrainingImage"
 if not os.path.exists(trainimage_path):
     os.makedirs(trainimage_path)
 
@@ -42,13 +42,12 @@ studentdetail_path = (
 )
 attendance_path = "Attendance"
 
-
 window = Tk()
-window.title("Face recognizer")
+window.title("Face Recognizer")
 window.geometry("1280x720")
 dialog_title = "QUIT"
 dialog_text = "Are you sure want to close?"
-window.configure(background="black")
+window.configure(background="#1c1c1c")  # Dark theme
 
 
 # to destroy screen
@@ -101,13 +100,13 @@ l1 = tk.Label(window, image=logo1, bg="black",)
 l1.place(x=470, y=10)
 
 titl = tk.Label(
-    window, text="Smart College!!", bg="black", fg="green", font=("arial", 27),
+    window, text="CLASS VISION", bg="black", fg="YELLOW", font=("arial", 27),
 )
 titl.place(x=525, y=12)
 
 a = tk.Label(
     window,
-    text="Welcome to the Face Recognition Based\nAttendance Management System",
+    text="Welcome to the CLASS VISION",
     bg="black",
     fg="yellow",
     bd=10,
