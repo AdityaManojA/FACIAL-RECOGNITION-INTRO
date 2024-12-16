@@ -191,11 +191,11 @@ def TakeImageUI():
         text="Name",
         width=10,
         height=2,
-        bg="black",
+        bg="#1c1c1c",
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica", 12),
+        font=("Helvetica", 14),
     )
     lbl2.place(x=120, y=200)
     txt2 = tk.Entry(
