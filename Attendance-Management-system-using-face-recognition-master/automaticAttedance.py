@@ -224,7 +224,7 @@ def subjectChoose(text_to_speech):
             text_to_speech(t)
         else:
             os.startfile(
-                f"Attendance\\{sub}"
+                os.path.join("Attendance", sub)
             )
 
     attf = tk.Button(
