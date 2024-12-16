@@ -165,11 +165,11 @@ def TakeImageUI():
         text="Enrollment No",
         width=10,
         height=2,
-        bg="black",
+        bg="#1c1c1c",
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica ", 12),
+        font=("Helvetica", 14),
     )
     lbl1.place(x=120, y=130)
     txt1 = tk.Entry(
@@ -202,10 +202,10 @@ def TakeImageUI():
         ImageUI,
         width=17,
         bd=5,
-        bg="black",
-        fg="yellow",
+        bg="#333333",  # Dark input background
+        fg="yellow",  # Bright text color for input
         relief=RIDGE,
-        font=("Helvetica", 25, "bold"),
+        font=("Helvetica", 18, "bold"),
     )
     txt2.place(x=250, y=200)
 
@@ -214,11 +214,11 @@ def TakeImageUI():
         text="Notification",
         width=10,
         height=2,
-        bg="black",
+        bg="#1c1c1c",
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica", 12),
+        font=("Helvetica", 14),
     )
     lbl3.place(x=120, y=270)
 
@@ -228,10 +228,10 @@ def TakeImageUI():
         width=32,
         height=2,
         bd=5,
-        bg="black",
-        fg="yellow",
+        bg="#333333",  # Dark background for messages
+        fg="yellow",  # Bright text color for messages
         relief=RIDGE,
-        font=("times", 12, "bold"),
+        font=("Helvetica", 14, "bold"),
     )
     message.place(x=250, y=270)
 
@@ -257,9 +257,9 @@ def TakeImageUI():
         text="Take Image",
         command=take_image,
         bd=10,
-        font=("Helvetica", 18),
-        bg="black",
-        fg="yellow",
+        font=("Helvetica", 18, "bold"),
+        bg="#333333",  # Dark background for the button
+        fg="yellow",  # Bright text color for the button
         height=2,
         width=12,
         relief=RIDGE,
@@ -281,9 +281,9 @@ def TakeImageUI():
         text="Train Image",
         command=train_image,
         bd=10,
-        font=("Helvetica", 18),
-        bg="black",
-        fg="yellow",
+        font=("Helvetica", 18, "bold"),
+        bg="#333333",  # Dark background for the button
+        fg="yellow",  # Bright text color for the button
         height=2,
         width=12,
         relief=RIDGE,
